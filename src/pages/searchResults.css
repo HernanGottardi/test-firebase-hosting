@@ -66,3 +66,57 @@ h6
     width: 120px;
 }
 
+@media (max-width:400px)
+{
+
+    .cont
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tabla 
+    {
+        margin: 0 10px 0 10px;
+    }
+
+    .filas
+    {
+        gap: 10px;
+    }
+    .resultados
+    {
+        gap: 10px;
+        font-size: 15px;
+        padding: 10px;
+        width: 90%;
+    }
+    .medirImagen
+    {
+        width: 80px;
+        height: 80px;
+    }
+
+    .imagen
+    {
+        width: 80px;
+    }
+
+    .link
+    {
+        width: 30px;
+    }
+
+    .titulo
+    {
+        width: 80px;
+    }
+
+    .precio
+    {
+        width: 100px;
+    }
+}
+

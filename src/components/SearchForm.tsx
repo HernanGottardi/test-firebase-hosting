@@ -18,7 +18,7 @@ function SearchForm (){
     return (
         <div className="contenedor">
             <form className="formulario" onSubmit={handlerSubmit}>
-                <input className="inputBuscar" type="text" name="query"/>
+                <input className="inputBuscar" placeholder="Tu busqueda es..."type="text" name="query"/>
                 <button className="buttonBuscar">Buscar</button>
             </form>
         </div>

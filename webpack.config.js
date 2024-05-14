@@ -13,7 +13,7 @@ module.exports = {
     entry: './src/index.tsx', 
     resolve: 
     {
-        extensions: ['.tsx', '.js', '.ts']
+        extensions: ['.tsx', '.js', '.ts', '.png']
     },
     output: 
     {

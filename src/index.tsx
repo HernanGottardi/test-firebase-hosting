@@ -8,11 +8,19 @@ import {SearchResults} from "./pages/searchResults";
 import {Home} from "./pages/Home";
 import {SearchItem} from "./pages/searchItem";
 
+import { Loader } from 'rsuite';
+
+const Load = () => (
+  <div style={{ display: 'flex', justifyContent: 'center', fontSize: '60px', alignItems: 'center', height: '100vh', color: "white" }}>
+    <Loader inverse size="lg" content="Cargando..." />
+  </div>
+);
+
 const rootEl = createRoot(document.querySelector(".root"))
 
 function App() {
   return (
-    <Suspense fallback={"Cargando..."}>
+    <Suspense fallback= {<Load/>}>
       <RecoilRoot>
         <BrowserRouter>
           <Routes>

@@ -6,7 +6,7 @@ function Home ()
 {
     return (
     <div className="contenedorTitulo">
-        <h1>{"Bienvenido,"}</h1>
+        <h1>{"Bienvenido/da,"}</h1>
         <h2>{"Hace tú busqueda. :)"}</h2>
     </div>
     )

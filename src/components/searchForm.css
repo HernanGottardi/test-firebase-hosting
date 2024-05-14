@@ -38,3 +38,17 @@ body
     border: 1px solid black;
     border-radius: 5px;
 }
+
+@media (max-width:500px)
+{
+    .inputBuscar
+    {
+        width: 220px;
+    }
+
+    .buttonBuscar
+    {
+        width: 65px;
+    }
+}
+
