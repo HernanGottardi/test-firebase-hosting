@@ -16,12 +16,12 @@ export function SearchResults()
           <tbody className="filas">
             {results.map((e) => {
               return (
-                <tr className="resultados">
-                  <td className="link"><Link to={"/item/" + e.id}>Ver mas</Link></td>
-                  <td className="titulo">{e.title}</td>
-                  <td className="precio">${e.price}</td>
-                  <td className="imagen"><img className="medirImagen"src={e.thumbnail} alt="ImgProducto" /></td>
-                </tr>
+                <div className="resultados">
+                  <h6 className="link"><Link to={"/item/" + e.id}>Ver mas</Link></h6>
+                  <h6 className="titulo">{e.title}</h6>
+                  <h6 className="precio">${e.price}</h6>
+                  <div className="imagen"><img className="medirImagen"src={e.thumbnail} alt="ImgProducto" /></div>
+                </div>
               );
             })}
           </tbody>

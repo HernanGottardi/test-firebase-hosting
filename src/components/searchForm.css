@@ -11,7 +11,9 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
+
 
 .formulario 
 {
@@ -26,6 +28,7 @@ body
     border: 1px solid black;
     border-radius: 5px;
     font-size: 15px;
+    text-indent: 10px;
 }
 
 .buttonBuscar

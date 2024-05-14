@@ -8,9 +8,36 @@ body
     background-color: rgb(0, 35, 85);
 }
 
+.tabla
+{
+    margin: 0 auto;
+}
+
+.filas
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
 .resultados
 {
     display: flex;
+    gap: 20px;
+    font-size: 40px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: rgb(0, 2, 48);
+    padding: 20px;
+}
+
+h6 
+{
+    vertical-align: middle;
+    text-align: center;
+    color: white;
 }
 
 .medirImagen
@@ -26,22 +53,16 @@ body
 
 .link
 {
-    width: 52px;
-    text-align: center;
-
+    width: 100px;
 }
 
 .titulo
 {
     width: 400px;
-    text-align: center;
-
 }
 
 .precio
 {
-    width: 80px;
-    text-align: center;
-
+    width: 120px;
 }
 

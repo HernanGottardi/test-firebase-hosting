@@ -1,6 +1,6 @@
 .contenedorTitulo
 {
-    margin: 0 auto;
+    margin: 60px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
