@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {useSearchResults} from "../hooks";
 import {Link} from "react-router-dom";
+import "./searchResults.css"
 
 export function SearchResults() 
 {
@@ -10,24 +11,16 @@ export function SearchResults()
 
   if (results.length !== 0) {
     return (
-      <div>
-        <h1>Resultados</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Nombre</th>
-              <th>Precio</th>
-              <th>Imagen</th>
-            </tr>
-          </thead>
-          <tbody>
+      <div className="cont">
+        <table className="tabla">
+          <tbody className="filas">
             {results.map((e) => {
               return (
-                <tr key={e.id}>
-                  <td><Link to={"/item/" + e.id}>Ver mas</Link></td>
-                  <td>{e.title}</td>
-                  <td>{e.price}</td>
-                  <td><img src={e.thumbnail} alt="ImgProducto" /></td>
+                <tr className="resultados">
+                  <td className="link"><Link to={"/item/" + e.id}>Ver mas</Link></td>
+                  <td className="titulo">{e.title}</td>
+                  <td className="precio">${e.price}</td>
+                  <td className="imagen"><img className="medirImagen"src={e.thumbnail} alt="ImgProducto" /></td>
                 </tr>
               );
             })}

@@ -2,6 +2,8 @@ import React, {useState, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import {useSearchResults} from "../hooks"
 
+import "./searchForm.css"
+
 function SearchForm (){
 
     const navigate = useNavigate();
@@ -11,15 +13,15 @@ function SearchForm (){
     {
         e.preventDefault();
         navigate("/search/" + e.target.query.value);        
-
     }
 
     return (
-        <form onSubmit={handlerSubmit}>
-            <input type="text" name="query"/>
-            <button>Buscar</button>
-            <h4>Resultados {results.length}</h4>
-        </form>
+        <div className="contenedor">
+            <form className="formulario" onSubmit={handlerSubmit}>
+                <input className="inputBuscar" type="text" name="query"/>
+                <button className="buttonBuscar">Buscar</button>
+            </form>
+        </div>
     )
 
 }

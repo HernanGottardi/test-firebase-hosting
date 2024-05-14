@@ -25,10 +25,10 @@ export function SearchItem()
     }, [id])
 
   return (
-    <div>
-      <h2>{data.title}</h2>
-      <h4>Precio: {data.price}</h4>
-      <img src={data.thumbnail} alt="" />
+    <div className="root">
+      <h2 className="titulo">{data.title}</h2>
+      <h4 className="precio">Precio: {data.price}</h4>
+      <img className="imagen" src={data.thumbnail} alt="" />
     </div>
   );
 }

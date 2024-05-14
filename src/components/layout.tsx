@@ -12,7 +12,6 @@ export function Layout()
       <SearchForm/>
     </header>
     <Outlet></Outlet>
-    <footer>Soy el footer</footer>
   </div>
   )
 }
